@@ -1,171 +1,623 @@
 <html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"on-primary-fixed-variant":"#004f50","tertiary-fixed-dim":"#ffb691","secondary":"#536161","on-tertiary":"#ffffff","surface-variant":"#e5e2e1","on-tertiary-fixed-variant":"#703716","secondary-container":"#d6e5e5","background":"#fcf9f8","soft-cyan":"#E3F2F2","on-primary-container":"#f3fffe","error-container":"#ffdad6","surface-container-highest":"#e5e2e1","charcoal":"#1A1A1A","on-surface":"#1c1b1b","on-secondary-fixed":"#101e1e","inverse-surface":"#313030","surface-container-high":"#eae7e7","error":"#ba1a1a","on-background":"#1c1b1b","secondary-fixed-dim":"#bbc9c9","on-error-container":"#93000a","primary-fixed-dim":"#7fd5d5","secondary-fixed":"#d6e5e5","surface-container-low":"#f6f3f2","primary-fixed":"#9bf1f2","primary-container":"#208182","surface-bright":"#fcf9f8","pure-white":"#FFFFFF","primary":"#006768","on-tertiary-container":"#fffbff","slate-gray":"#666666","on-primary":"#ffffff","on-secondary-fixed-variant":"#3c494a","surface-dim":"#dcd9d9","on-error":"#ffffff","ocean-teal":"#429B9C","outline":"#6e7979","on-tertiary-fixed":"#341100","inverse-on-surface":"#f3f0ef","surface-container":"#f0eded","surface-container-lowest":"#ffffff","tertiary-container":"#a8633e","outline-variant":"#bdc9c8","on-secondary-container":"#596767","on-primary-fixed":"#002020","tertiary":"#8a4b28","on-secondary":"#ffffff","surface":"#fcf9f8","on-surface-variant":"#3e4949","tertiary-fixed":"#ffdbcb","inverse-primary":"#7fd5d5","surface-tint":"#00696b"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"lg":"48px","base":"8px","container-max":"1200px","sm":"12px","xl":"80px","gutter":"24px","md":"24px","xs":"4px"},"fontFamily":{"label-sm":["Inter"],"display":["Inter"],"headline-lg":["Inter"],"headline-lg-mobile":["Inter"],"headline-sm":["Inter"],"headline-md":["Inter"],"body-md":["Inter"],"label-md":["Inter"],"body-lg":["Inter"]},"fontSize":{"label-sm":["12px",{"lineHeight":"1.2","letterSpacing":"0.05em","fontWeight":"600"}],"display":["56px",{"lineHeight":"1.1","fontWeight":"700"}],"headline-lg":["48px",{"lineHeight":"1.2","fontWeight":"700"}],"headline-lg-mobile":["32px",{"lineHeight":"1.2","fontWeight":"700"}],"headline-sm":["24px",{"lineHeight":"1.4","fontWeight":"600"}],"headline-md":["32px",{"lineHeight":"1.3","fontWeight":"600"}],"body-md":["16px",{"lineHeight":"1.6","fontWeight":"400"}],"label-md":["14px",{"lineHeight":"1.2","letterSpacing":"0.02em","fontWeight":"500"}],"body-lg":["18px",{"lineHeight":"1.6","fontWeight":"400"}]}}}}</script><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/></head><body class="bg-background font-body-md text-on-background"><header class="fixed top-md left-0 right-0 z-50 px-md"><div class="max-w-container-max mx-auto h-20 bg-pure-white/80 backdrop-blur-xl rounded-full shadow-[0_10px_25px_rgba(0,0,0,0.05)] flex items-center justify-between px-md md:px-lg"><a href="01_home.html" class="flex items-center gap-base text-inherit no-underline"><img alt="Borneo Export Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA_gwzJRPj7AZUdW3kE5RWtmXttI4zHoact2pZEQFrdtxJAu58ROsViu79jNY3IV4GQw5yu6AzoGIg79Vsu5jAwZ3gf1btrsBf6Pg4tD0LMztaB48sPas0L4a5pHtQclmlWUH2XExXTM80SNLmLBIqRnAiJ6233gPCCtVvvZopons-EXcViuOz1FShTBps1DWPlSt6g3CfY4jUgliJeZDY5H5nHZMZWtpeARV2WURsi5cqUNUs-PFGnLQ"/><span class="font-headline-sm text-charcoal tracking-tight">Borneo Export</span></a><nav class="hidden lg:flex items-center gap-md" data-active-classes="text-primary font-semibold"><a aria-current="page" class="transition-colors text-primary font-semibold" data-path="home" href="01_home.html">Home</a><a class="font-label-md text-on-surface-variant hover:text-ocean-teal transition-colors" data-path="about" href="02_about_us.html">About</a><a class="font-label-md text-on-surface-variant hover:text-ocean-teal transition-colors" data-path="catalog" href="03_product_catalog.html">Catalog</a><a class="font-label-md text-on-surface-variant hover:text-ocean-teal transition-colors" data-path="quality" href="04_quality_and_certifications.html">Quality</a><a class="font-label-md text-on-surface-variant hover:text-ocean-teal transition-colors" data-path="shipping" href="05_shipping_and_logistics.html">Shipping</a><a class="font-label-md text-on-surface-variant hover:text-ocean-teal transition-colors" data-path="contact" href="06_contact_and_rfq.html">Contact</a></nav><div class="flex items-center gap-base"><a href="06_contact_and_rfq.html" class="hidden md:flex bg-ocean-teal text-pure-white font-label-md px-md py-3 rounded-full shadow-[0_4px_12px_rgba(66,155,156,0.2)] hover:bg-primary transition-all items-center justify-center text-decoration-none">Request Quotation</a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="pt-20"><div class="flex flex-col w-full font-body-md text-on-background">
-<!-- Header & Filters -->
-<section class="w-full flex flex-col items-center pt-xl pb-lg px-gutter relative z-10">
-<h2 class="font-headline-lg text-charcoal text-center mb-lg">Curated Export Commodities</h2>
-<div class="flex items-center justify-center p-sm rounded-full bg-pure-white/60 backdrop-blur-[12px] shadow-[0_10px_25px_rgba(0,0,0,0.05)] gap-base max-w-full overflow-x-auto">
-<button class="px-md py-sm rounded-full bg-soft-cyan text-ocean-teal font-label-md whitespace-nowrap transition-colors">All</button>
-<button class="px-md py-sm rounded-full bg-transparent hover:bg-surface-container text-on-surface-variant font-label-md whitespace-nowrap transition-colors">Marine &amp; Fishery</button>
-<button class="px-md py-sm rounded-full bg-transparent hover:bg-surface-container text-on-surface-variant font-label-md whitespace-nowrap transition-colors">Agriculture</button>
-<button class="px-md py-sm rounded-full bg-transparent hover:bg-surface-container text-on-surface-variant font-label-md whitespace-nowrap transition-colors">Handicrafts</button>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+  <meta name="theme-color" content="#006768"/>
+  <meta name="mobile-web-app-capable" content="yes"/>
+  <meta name="apple-mobile-web-app-status-bar-style" content="default"/>
+  <meta name="description" content="Borneo Export - Premier B2B Gateway for South Kalimantan Natural Commodities & Verified MSMEs"/>
+  <style>
+    /* Progressive & interactive click animation with circular ripple */
+    .nav-pill-btn {
+      position: relative;
+      overflow: hidden;
+      transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .nav-pill-btn:active {
+      transform: scale(0.92);
+    }
+    .nav-pill-btn::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 0;
+      height: 0;
+      border-radius: 50%;
+      background: rgba(0, 103, 104, 0.25);
+      transform: translate(-50%, -50%);
+      opacity: 0;
+      pointer-events: none;
+      transition: width 0.4s ease-out, height 0.4s ease-out, opacity 0.4s ease-out;
+    }
+    .nav-pill-btn:active::after {
+      width: 140px;
+      height: 140px;
+      opacity: 1;
+      transition: 0s;
+    }
+    .active-nav-pill {
+      animation: pop-in 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+    @keyframes pop-in {
+      0% { transform: scale(0.92); }
+      100% { transform: scale(1); }
+    }
+    /* Material icons vertical centering */
+    .material-symbols-outlined {
+      display: inline-flex;
+      vertical-align: middle;
+      align-items: center;
+      justify-content: center;
+    }
+  </style>
+
+</head><body class="bg-background font-body-md text-on-background"><header class="fixed top-2 sm:top-4 left-0 right-0 z-50 px-3 sm:px-6">
+  <div class="max-w-7xl mx-auto h-16 sm:h-20 bg-white/90 backdrop-blur-xl rounded-full shadow-[0_10px_30px_rgba(0,0,0,0.06)] border border-white/70 flex items-center justify-between px-4 sm:px-6 md:px-8">
+    <a href="01_home.html" class="flex items-center gap-2.5 sm:gap-3 group select-none text-inherit no-underline">
+      <img alt="Borneo Export Logo" class="h-7 sm:h-8 w-auto object-contain transition-transform group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA_gwzJRPj7AZUdW3kE5RWtmXttI4zHoact2pZEQFrdtxJAu58ROsViu79jNY3IV4GQw5yu6AzoGIg79Vsu5jAwZ3gf1btrsBf6Pg4tD0LMztaB48sPas0L4a5pHtQclmlWUH2XExXTM80SNLmLBIqRnAiJ6233gPCCtVvvZopons-EXcViuOz1FShTBps1DWPlSt6g3CfY4jUgliJeZDY5H5nHZMZWtpeARV2WURsi5cqUNUs-PFGnLQ"/>
+      <span class="font-bold text-lg sm:text-xl text-[#1a1a1a] tracking-tight group-hover:text-[#006768] transition-colors">Borneo Export</span>
+    </a>
+    
+    <!-- Desktop Navigation Menu -->
+    <nav class="hidden lg:flex items-center gap-1 xl:gap-2">
+      <a href="01_home.html" class="nav-pill-btn relative px-4 py-2 rounded-full font-medium text-sm text-[#536161] hover:text-[#006768] hover:bg-[#006768]/8 active:scale-95 transition-all duration-200 flex items-center select-none no-underline">
+                    <span>Home</span>
+                </a>
+<a href="02_about_us.html" class="nav-pill-btn relative px-4 py-2 rounded-full font-medium text-sm text-[#536161] hover:text-[#006768] hover:bg-[#006768]/8 active:scale-95 transition-all duration-200 flex items-center select-none no-underline">
+                    <span>About</span>
+                </a>
+<a href="03_product_catalog.html" class="active-nav-pill relative px-4 py-2 rounded-full font-semibold text-sm text-[#006768] bg-[#006768]/12 border border-[#006768]/30 shadow-sm transition-all duration-300 flex items-center gap-2 select-none no-underline">
+                    <span class="w-2 h-2 rounded-full bg-[#006768] animate-pulse"></span>
+                    <span>Catalog</span>
+                </a>
+<a href="04_quality_and_certifications.html" class="nav-pill-btn relative px-4 py-2 rounded-full font-medium text-sm text-[#536161] hover:text-[#006768] hover:bg-[#006768]/8 active:scale-95 transition-all duration-200 flex items-center select-none no-underline">
+                    <span>Quality</span>
+                </a>
+<a href="05_shipping_and_logistics.html" class="nav-pill-btn relative px-4 py-2 rounded-full font-medium text-sm text-[#536161] hover:text-[#006768] hover:bg-[#006768]/8 active:scale-95 transition-all duration-200 flex items-center select-none no-underline">
+                    <span>Shipping</span>
+                </a>
+<a href="06_contact_and_rfq.html" class="nav-pill-btn relative px-4 py-2 rounded-full font-medium text-sm text-[#536161] hover:text-[#006768] hover:bg-[#006768]/8 active:scale-95 transition-all duration-200 flex items-center select-none no-underline">
+                    <span>Contact</span>
+                </a>
+    </nav>
+    
+    <!-- Right Actions -->
+    <div class="flex items-center gap-2 sm:gap-3">
+      <a href="06_contact_and_rfq.html" class="hidden sm:inline-flex items-center justify-center px-4 md:px-5 py-2.5 rounded-full bg-[#429B9C] hover:bg-[#006768] text-white font-semibold text-xs md:text-sm shadow-[0_4px_14px_rgba(66,155,156,0.25)] hover:shadow-[0_6px_20px_rgba(0,103,104,0.35)] active:scale-95 transition-all duration-200 no-underline">
+        Request Quotation
+      </a>
+      
+      <!-- Mobile Menu Toggle Button -->
+      <button id="mobile-menu-toggle-btn" class="lg:hidden w-10 h-10 rounded-full bg-slate-100/90 hover:bg-slate-200/90 active:scale-95 flex items-center justify-center text-[#1a1a1a] transition-all cursor-pointer" aria-label="Toggle navigation menu">
+        <span id="mobile-menu-icon" class="material-symbols-outlined text-[24px]">menu</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile Drawer Dropdown Sheet -->
+  <div id="mobile-menu-drawer" class="hidden lg:hidden fixed top-20 sm:top-24 left-3 right-3 sm:left-6 sm:right-6 bg-white/95 backdrop-blur-2xl rounded-3xl p-5 shadow-[0_25px_60px_rgba(0,0,0,0.18)] border border-white/70 z-50 flex flex-col gap-2 max-h-[80vh] overflow-y-auto">
+    <div class="flex items-center justify-between pb-3 mb-1 border-b border-slate-100">
+      <span class="text-xs font-bold text-[#006768] uppercase tracking-wider">Navigation Menu</span>
+      <span class="text-xs text-slate-400">Borneo Export</span>
+    </div>
+    <a href="01_home.html" class="px-4 py-3 rounded-2xl font-medium text-base text-[#536161] hover:text-[#006768] hover:bg-slate-50 flex items-center justify-between transition-colors no-underline">
+                    <span>Home</span>
+                    <span class="material-symbols-outlined text-[18px] text-slate-400">chevron_right</span>
+                </a>
+<a href="02_about_us.html" class="px-4 py-3 rounded-2xl font-medium text-base text-[#536161] hover:text-[#006768] hover:bg-slate-50 flex items-center justify-between transition-colors no-underline">
+                    <span>About</span>
+                    <span class="material-symbols-outlined text-[18px] text-slate-400">chevron_right</span>
+                </a>
+<a href="03_product_catalog.html" class="px-4 py-3 rounded-2xl font-semibold text-base text-[#006768] bg-[#006768]/12 border border-[#006768]/25 flex items-center justify-between no-underline">
+                    <span class="flex items-center gap-2.5">
+                        <span class="w-2.5 h-2.5 rounded-full bg-[#006768]"></span>
+                        <span>Catalog</span>
+                    </span>
+                    <span class="material-symbols-outlined text-[18px]">check_circle</span>
+                </a>
+<a href="04_quality_and_certifications.html" class="px-4 py-3 rounded-2xl font-medium text-base text-[#536161] hover:text-[#006768] hover:bg-slate-50 flex items-center justify-between transition-colors no-underline">
+                    <span>Quality</span>
+                    <span class="material-symbols-outlined text-[18px] text-slate-400">chevron_right</span>
+                </a>
+<a href="05_shipping_and_logistics.html" class="px-4 py-3 rounded-2xl font-medium text-base text-[#536161] hover:text-[#006768] hover:bg-slate-50 flex items-center justify-between transition-colors no-underline">
+                    <span>Shipping</span>
+                    <span class="material-symbols-outlined text-[18px] text-slate-400">chevron_right</span>
+                </a>
+<a href="06_contact_and_rfq.html" class="px-4 py-3 rounded-2xl font-medium text-base text-[#536161] hover:text-[#006768] hover:bg-slate-50 flex items-center justify-between transition-colors no-underline">
+                    <span>Contact</span>
+                    <span class="material-symbols-outlined text-[18px] text-slate-400">chevron_right</span>
+                </a>
+    <div class="pt-3 mt-1 border-t border-slate-100">
+      <a href="06_contact_and_rfq.html" class="w-full py-3 rounded-2xl bg-[#429B9C] hover:bg-[#006768] text-white font-semibold text-sm shadow flex items-center justify-center gap-2 transition-all no-underline">
+        <span class="material-symbols-outlined text-[18px]">send</span>
+        <span>Request Quotation</span>
+      </a>
+    </div>
+  </div>
+</header><main class="pt-24 sm:pt-28 pb-16">
+  <div class="flex flex-col w-full font-body-md text-on-background">
+    <!-- Header & Filters -->
+    <section class="w-full flex flex-col items-center pt-8 pb-8 px-4 sm:px-6 md:px-8 relative z-10 text-center">
+      <span class="text-xs font-bold text-[#006768] tracking-widest uppercase bg-teal-50 border border-teal-200 px-3.5 py-1 rounded-full mb-3">Commodity Portfolio</span>
+      <h1 class="text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#1a1a1a] tracking-tight mb-4">Curated Export Commodities</h1>
+      <p class="text-sm sm:text-base text-slate-600 max-w-2xl mb-8">Sustainably sourced natural commodities directly from verified producers in South Kalimantan with transparent traceability.</p>
+      
+      <!-- Filter Tabs Bar -->
+      <div class="flex items-center justify-center p-1.5 rounded-full bg-white/90 backdrop-blur-md shadow-md border border-slate-200/80 gap-1.5 sm:gap-2 max-w-full overflow-x-auto">
+        <button onclick="filterCatalog('all', this)" class="filter-btn px-5 py-2.5 rounded-full bg-[#006768] text-white font-semibold text-xs sm:text-sm whitespace-nowrap shadow transition-all duration-200 cursor-pointer">All Commodities</button>
+        <button onclick="filterCatalog('marine', this)" class="filter-btn px-5 py-2.5 rounded-full bg-transparent hover:bg-slate-100 text-[#536161] font-semibold text-xs sm:text-sm whitespace-nowrap transition-all duration-200 cursor-pointer">Marine & Fishery</button>
+        <button onclick="filterCatalog('agriculture', this)" class="filter-btn px-5 py-2.5 rounded-full bg-transparent hover:bg-slate-100 text-[#536161] font-semibold text-xs sm:text-sm whitespace-nowrap transition-all duration-200 cursor-pointer">Agriculture & Forest</button>
+        <button onclick="filterCatalog('crafts', this)" class="filter-btn px-5 py-2.5 rounded-full bg-transparent hover:bg-slate-100 text-[#536161] font-semibold text-xs sm:text-sm whitespace-nowrap transition-all duration-200 cursor-pointer">Handicrafts</button>
+      </div>
+    </section>
+
+    <!-- Product Grid & Side Panel Layout -->
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 md:px-8 w-full pb-12 flex flex-col lg:flex-row gap-8 relative">
+      <!-- Grid Area -->
+      <div class="flex-1 grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-2 gap-6 md:gap-8">
+        
+        <!-- Card 1: Damar Resin -->
+        <article data-category="agriculture" class="commodity-card bg-white rounded-3xl shadow-[0_10px_30px_rgba(0,0,0,0.05)] hover:shadow-2xl overflow-hidden flex flex-col transition-all duration-300 hover:-translate-y-1.5 group border border-slate-100">
+          <div class="w-full aspect-[16/10] bg-slate-100 relative overflow-hidden">
+            <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" alt="Premium Damar Resin" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDlHZwLTtEPoMBpg947luuK1yrjOiLA8plXbHBBHASIOzJ4--pNmi5YL78gQgeosLR0_gVWrZrFeSUV0Kr7rkpH23i9_pvfn4_Wk9Pi_goCuQvaWZTW7EdE1GPw8yR1qUnpyxcMH_A3qMsvpUSMQGRHsxZMwVexuH65UKqEw48ZKFEwl4U9ucjeYhKJdZOx2ddVG1PdtRNoELPjb694aTeM8TFOslOwPcXWxatBj1LSC11kplPFFOhyIQ"/>
+            <span class="absolute top-3.5 left-3.5 bg-white/95 backdrop-blur-md px-3 py-1 rounded-full text-xs font-bold text-[#006768] shadow-sm">Forest Product</span>
+          </div>
+          <div class="p-5 sm:p-6 flex flex-col flex-1 justify-between gap-4">
+            <div>
+              <h3 class="font-bold text-lg text-[#1a1a1a] group-hover:text-[#006768] transition-colors leading-snug">Premium Damar Resin (Agathis Dammara)</h3>
+              <p class="text-xs text-slate-500 mt-1">Directly harvested from certified agroforests in Kotabaru.</p>
+            </div>
+            <div class="flex flex-col gap-2 bg-slate-50 p-3.5 rounded-2xl">
+              <div class="flex justify-between items-center text-xs">
+                <span class="text-slate-500">HS Code</span>
+                <span class="text-[#1a1a1a] font-bold">1301.90</span>
+              </div>
+              <div class="flex justify-between items-center text-xs">
+                <span class="text-slate-500">Supply Capacity</span>
+                <span class="text-[#1a1a1a] font-bold">20 MT/Month</span>
+              </div>
+              <div class="flex justify-between items-center text-xs">
+                <span class="text-slate-500">Minimum Order</span>
+                <span class="text-[#1a1a1a] font-bold">1 MT</span>
+              </div>
+            </div>
+            <button onclick="selectProduct(0)" class="w-full py-3 px-5 rounded-full border-2 border-[#429B9C] text-[#006768] hover:bg-[#006768] hover:text-white font-semibold text-xs sm:text-sm transition-all duration-200 mt-2 flex items-center justify-center gap-2 shadow-sm hover:shadow-md active:scale-95 cursor-pointer text-center group/btn">
+              <span>View Specifications</span>
+              <span class="material-symbols-outlined text-[18px] group-hover/btn:translate-x-1 transition-transform">arrow_forward</span>
+            </button>
+          </div>
+        </article>
+
+        <!-- Card 2: Dried Salted Croaker -->
+        <article data-category="marine" class="commodity-card bg-white rounded-3xl shadow-[0_10px_30px_rgba(0,0,0,0.05)] hover:shadow-2xl overflow-hidden flex flex-col transition-all duration-300 hover:-translate-y-1.5 group border border-slate-100">
+          <div class="w-full aspect-[16/10] bg-slate-100 relative overflow-hidden">
+            <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" alt="Dried Salted Croaker" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDC3VWjhWdOsh-BJHTXxhMLxmFd2G5G3jeNeENVC5GYs6AznkAyVQvR27nyLRAlE-jIpllGq_dVu2PRsG4ti1vOsBl-WkJIyHmJYKr01N3GPiuh1xUhyoYjHPzdSE3BY46DEUASdGVYMnocsbCIprvHQ2WPS2XRhjlMKnQtGyrkvOlDlJ_kYSZOeja-VKBLeVfH11MYtux9CV-k7JUbXMbt4kddbv-XQPoLP7lWOqd6lFJI6gj-JNmCCQ"/>
+            <span class="absolute top-3.5 left-3.5 bg-white/95 backdrop-blur-md px-3 py-1 rounded-full text-xs font-bold text-[#006768] shadow-sm">Marine & Fishery</span>
+          </div>
+          <div class="p-5 sm:p-6 flex flex-col flex-1 justify-between gap-4">
+            <div>
+              <h3 class="font-bold text-lg text-[#1a1a1a] group-hover:text-[#006768] transition-colors leading-snug">Dried Salted Croaker (Grade A)</h3>
+              <p class="text-xs text-slate-500 mt-1">Hygienically solar-dried with strict moisture control.</p>
+            </div>
+            <div class="flex flex-col gap-2 bg-slate-50 p-3.5 rounded-2xl">
+              <div class="flex justify-between items-center text-xs">
+                <span class="text-slate-500">HS Code</span>
+                <span class="text-[#1a1a1a] font-bold">0305.59</span>
+              </div>
+              <div class="flex justify-between items-center text-xs">
+                <span class="text-slate-500">Supply Capacity</span>
+                <span class="text-[#1a1a1a] font-bold">10 MT/Month</span>
+              </div>
+              <div class="flex justify-between items-center text-xs">
+                <span class="text-slate-500">Minimum Order</span>
+                <span class="text-[#1a1a1a] font-bold">500 Kg</span>
+              </div>
+            </div>
+            <button onclick="selectProduct(1)" class="w-full py-3 px-5 rounded-full border-2 border-[#429B9C] text-[#006768] hover:bg-[#006768] hover:text-white font-semibold text-xs sm:text-sm transition-all duration-200 mt-2 flex items-center justify-center gap-2 shadow-sm hover:shadow-md active:scale-95 cursor-pointer text-center group/btn">
+              <span>View Specifications</span>
+              <span class="material-symbols-outlined text-[18px] group-hover/btn:translate-x-1 transition-transform">arrow_forward</span>
+            </button>
+          </div>
+        </article>
+
+        <!-- Card 3: Kotabaru White Pepper -->
+        <article data-category="agriculture" class="commodity-card bg-white rounded-3xl shadow-[0_10px_30px_rgba(0,0,0,0.05)] hover:shadow-2xl overflow-hidden flex flex-col transition-all duration-300 hover:-translate-y-1.5 group border border-slate-100">
+          <div class="w-full aspect-[16/10] bg-slate-100 relative overflow-hidden">
+            <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" alt="Kotabaru White Pepper" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA7ugC3EuVIvC0EkC1n48qJSw6JvoJaSKYgyYMTfHwk4PxWpN-02_eK8SDCmPM8SISOLdYAOfMkTSmorEMzdYu90uyeQMJGeKkyKujZ6RSMNMMPW3qZi1R1qihowQWP5Pe5aIdyDkpEtMLPq5boc2u7pRKuHL8kBMBB3r1uhbJBrGnuYuDo48L5Chn8fN39mzvLzNL4rqaksyNQFgUS8mHVIGOTaUr1yBBsiOaLXZFcQ13C1Ds5NIzmlg"/>
+            <span class="absolute top-3.5 left-3.5 bg-white/95 backdrop-blur-md px-3 py-1 rounded-full text-xs font-bold text-[#006768] shadow-sm">Spices</span>
+          </div>
+          <div class="p-5 sm:p-6 flex flex-col flex-1 justify-between gap-4">
+            <div>
+              <h3 class="font-bold text-lg text-[#1a1a1a] group-hover:text-[#006768] transition-colors leading-snug">Kotabaru White Pepper</h3>
+              <p class="text-xs text-slate-500 mt-1">High piperine content, pungent aroma, uniform bold berries.</p>
+            </div>
+            <div class="flex flex-col gap-2 bg-slate-50 p-3.5 rounded-2xl">
+              <div class="flex justify-between items-center text-xs">
+                <span class="text-slate-500">HS Code</span>
+                <span class="text-[#1a1a1a] font-bold">0904.11</span>
+              </div>
+              <div class="flex justify-between items-center text-xs">
+                <span class="text-slate-500">Supply Capacity</span>
+                <span class="text-[#1a1a1a] font-bold">15 MT/Month</span>
+              </div>
+              <div class="flex justify-between items-center text-xs">
+                <span class="text-slate-500">Minimum Order</span>
+                <span class="text-[#1a1a1a] font-bold">2 MT</span>
+              </div>
+            </div>
+            <button onclick="selectProduct(2)" class="w-full py-3 px-5 rounded-full border-2 border-[#429B9C] text-[#006768] hover:bg-[#006768] hover:text-white font-semibold text-xs sm:text-sm transition-all duration-200 mt-2 flex items-center justify-center gap-2 shadow-sm hover:shadow-md active:scale-95 cursor-pointer text-center group/btn">
+              <span>View Specifications</span>
+              <span class="material-symbols-outlined text-[18px] group-hover/btn:translate-x-1 transition-transform">arrow_forward</span>
+            </button>
+          </div>
+        </article>
+
+        <!-- Card 4: Traditional Borneo Woven Mat -->
+        <article data-category="crafts" class="commodity-card bg-white rounded-3xl shadow-[0_10px_30px_rgba(0,0,0,0.05)] hover:shadow-2xl overflow-hidden flex flex-col transition-all duration-300 hover:-translate-y-1.5 group border border-slate-100">
+          <div class="w-full aspect-[16/10] bg-slate-100 relative overflow-hidden">
+            <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" alt="Traditional Borneo Woven Mat" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBRT5YCUHiUP5zbEb6KovrWEhg399WfT9g_oR2QxQ45rfZWARPNJjCWI_TDabcrtdu9cvNSpRLktvigj7EvG564yb4Wa4sOnGIAC8NkKSZTV9mNVJhCTW_d697EbwgzezR7m_FlnKWuhBqDK7qNqM-VX30sTehb_aY4x2l4vqDe8bTCGnkmhUUMxR-2u8P1nr4P1ThhdZaAzNl3dYk7M42eY5ti6jay6Wu0CLMSOr8i7IAKHl8Izjig5A"/>
+            <span class="absolute top-3.5 left-3.5 bg-white/95 backdrop-blur-md px-3 py-1 rounded-full text-xs font-bold text-[#006768] shadow-sm">Eco Handicraft</span>
+          </div>
+          <div class="p-5 sm:p-6 flex flex-col flex-1 justify-between gap-4">
+            <div>
+              <h3 class="font-bold text-lg text-[#1a1a1a] group-hover:text-[#006768] transition-colors leading-snug">Traditional Borneo Woven Mat</h3>
+              <p class="text-xs text-slate-500 mt-1">Hand-woven from natural Purun grass and wild rattan fibers.</p>
+            </div>
+            <div class="flex flex-col gap-2 bg-slate-50 p-3.5 rounded-2xl">
+              <div class="flex justify-between items-center text-xs">
+                <span class="text-slate-500">HS Code</span>
+                <span class="text-[#1a1a1a] font-bold">4601.21</span>
+              </div>
+              <div class="flex justify-between items-center text-xs">
+                <span class="text-slate-500">Supply Capacity</span>
+                <span class="text-[#1a1a1a] font-bold">500 Units/Month</span>
+              </div>
+              <div class="flex justify-between items-center text-xs">
+                <span class="text-slate-500">Minimum Order</span>
+                <span class="text-[#1a1a1a] font-bold">50 Units</span>
+              </div>
+            </div>
+            <button onclick="selectProduct(3)" class="w-full py-3 px-5 rounded-full border-2 border-[#429B9C] text-[#006768] hover:bg-[#006768] hover:text-white font-semibold text-xs sm:text-sm transition-all duration-200 mt-2 flex items-center justify-center gap-2 shadow-sm hover:shadow-md active:scale-95 cursor-pointer text-center group/btn">
+              <span>View Specifications</span>
+              <span class="material-symbols-outlined text-[18px] group-hover/btn:translate-x-1 transition-transform">arrow_forward</span>
+            </button>
+          </div>
+        </article>
+
+      </div>
+
+      <!-- Detail Side Panel (Desktop Sticky) -->
+      <aside class="hidden lg:flex w-84 xl:w-96 flex-shrink-0 flex-col gap-4 sticky top-28 h-fit">
+        <div class="bg-white rounded-3xl p-6 shadow-xl border border-slate-100 relative overflow-hidden">
+          <div class="flex items-center gap-2 mb-4 pb-3 border-b border-slate-100">
+            <span class="w-2.5 h-2.5 rounded-full bg-[#006768]"></span>
+            <h4 class="font-bold text-base text-[#1a1a1a]">Technical Specifications</h4>
+          </div>
+          
+          <h3 id="spec-title" class="font-bold text-lg text-[#006768] mb-4">Premium Damar Resin</h3>
+
+          <div class="space-y-3 text-xs sm:text-sm">
+            <div class="bg-slate-50 p-3 rounded-xl flex justify-between items-center">
+              <span class="text-slate-500 font-medium">Moisture</span>
+              <span id="spec-moisture" class="font-bold text-[#1a1a1a]">&lt;1.5%</span>
+            </div>
+            <div class="bg-slate-50 p-3 rounded-xl flex justify-between items-center">
+              <span class="text-slate-500 font-medium">Sizing / Grade</span>
+              <span id="spec-sizing" class="font-bold text-[#1a1a1a]">Grade A Clear Lumps</span>
+            </div>
+            <div class="bg-slate-50 p-3 rounded-xl flex justify-between items-center">
+              <span class="text-slate-500 font-medium">Packaging</span>
+              <span id="spec-pack" class="font-bold text-[#1a1a1a]">25kg Woven Bags</span>
+            </div>
+            <div class="bg-slate-50 p-3 rounded-xl flex justify-between items-center">
+              <span class="text-slate-500 font-medium">Origin</span>
+              <span id="spec-origin" class="font-bold text-[#006768]">Kotabaru, South Kalimantan</span>
+            </div>
+            <div class="bg-slate-50 p-3 rounded-xl flex justify-between items-center">
+              <span class="text-slate-500 font-medium">HS Code</span>
+              <span id="spec-hscode" class="font-bold text-[#1a1a1a]">1301.90</span>
+            </div>
+          </div>
+
+          <a href="06_contact_and_rfq.html" class="w-full mt-6 py-3 px-4 rounded-full bg-[#006768] hover:bg-[#004f50] text-white font-semibold text-sm shadow-[0_4px_14px_rgba(0,103,104,0.3)] hover:shadow-lg transition-all flex items-center justify-center gap-2 cursor-pointer no-underline">
+            <span class="material-symbols-outlined text-[18px]">description</span>
+            <span>Request Quotation</span>
+          </a>
+        </div>
+
+        <!-- Trust badge -->
+        <div class="bg-teal-50/70 border border-teal-200/70 rounded-2xl p-4 flex items-center gap-3">
+          <span class="material-symbols-outlined text-[#006768] text-2xl p-2 bg-white rounded-xl shadow-sm">verified</span>
+          <div>
+            <h5 class="font-bold text-xs text-[#1a1a1a]">100% Verified Origin</h5>
+            <p class="text-[11px] text-slate-500">Batch testing & Phytosanitary certified</p>
+          </div>
+        </div>
+      </aside>
+
+    </section>
+  </div>
+</main>
+
+<!-- Mobile / Tablet Specification Popup Modal -->
+<div id="mobile-spec-modal" class="hidden fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm">
+  <div class="bg-white rounded-3xl max-w-lg w-full p-6 shadow-2xl border border-white/80 max-h-[90vh] overflow-y-auto relative animate-[pop-in_0.25s_ease-out]">
+    <div class="flex items-center justify-between pb-4 mb-4 border-b border-slate-100">
+      <div class="flex items-center gap-2">
+        <span class="w-2.5 h-2.5 rounded-full bg-[#006768]"></span>
+        <h4 class="font-bold text-base text-[#1a1a1a]">Technical Specifications</h4>
+      </div>
+      <button onclick="closeSpecModal()" class="w-8 h-8 rounded-full bg-slate-100 hover:bg-slate-200 flex items-center justify-center text-slate-500 cursor-pointer transition-colors">
+        <span class="material-symbols-outlined text-[20px]">close</span>
+      </button>
+    </div>
+    <h3 id="modal-spec-title" class="font-bold text-lg text-[#1a1a1a] mb-3">Premium Damar Resin</h3>
+    <p id="modal-spec-desc" class="text-xs text-slate-600 mb-4 leading-relaxed"></p>
+    
+    <div class="space-y-2.5 mb-6 text-xs sm:text-sm">
+      <div class="bg-slate-50 p-3 rounded-xl flex justify-between items-center">
+        <span class="text-slate-500 font-medium">Moisture Content</span>
+        <span id="modal-spec-moisture" class="font-bold text-[#1a1a1a]">&lt;12%</span>
+      </div>
+      <div class="bg-slate-50 p-3 rounded-xl flex justify-between items-center">
+        <span class="text-slate-500 font-medium">Sizing / Grade</span>
+        <span id="modal-spec-sizing" class="font-bold text-[#1a1a1a]">Standard Export Grade</span>
+      </div>
+      <div class="bg-slate-50 p-3 rounded-xl flex justify-between items-center">
+        <span class="text-slate-500 font-medium">Packaging</span>
+        <span id="modal-spec-pack" class="font-bold text-[#1a1a1a]">25kg Bags</span>
+      </div>
+      <div class="bg-slate-50 p-3 rounded-xl flex justify-between items-center">
+        <span class="text-slate-500 font-medium">Origin</span>
+        <span id="modal-spec-origin" class="font-bold text-[#006768]">Kotabaru, South Kalimantan</span>
+      </div>
+    </div>
+
+    <div class="flex gap-3">
+      <a href="06_contact_and_rfq.html" class="flex-1 py-3 bg-[#006768] hover:bg-[#004f50] text-white font-semibold text-xs sm:text-sm rounded-xl text-center shadow flex items-center justify-center gap-2 no-underline">
+        <span class="material-symbols-outlined text-[18px]">request_quote</span>
+        Request Quotation
+      </a>
+      <button onclick="closeSpecModal()" class="px-5 py-3 bg-slate-100 hover:bg-slate-200 text-slate-700 font-semibold text-xs sm:text-sm rounded-xl transition-colors cursor-pointer">
+        Close
+      </button>
+    </div>
+  </div>
 </div>
-</section>
-<!-- Product Grid & Side Panel Layout -->
-<section class="max-w-container-max mx-auto px-gutter w-full pb-xl flex flex-col lg:flex-row gap-xl relative">
-<!-- Grid Area -->
-<div class="flex-1 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-lg">
-<!-- Card 1 -->
-<article class="bg-pure-white rounded-[24px] shadow-[0_10px_25px_rgba(0,0,0,0.05)] overflow-hidden flex flex-col transform transition-transform hover:-translate-y-1 group">
-<div class="w-full aspect-video bg-surface-container relative">
-<img class="w-full h-full object-cover rounded-t-[24px]" data-alt="Close up photography of premium Damar Resin pieces, clear pale yellow lumps of Agathis Dammara, sitting on a clean white surface with soft, diffused natural lighting. Corporate B2B style, high resolution, sharp focus." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDlHZwLTtEPoMBpg947luuK1yrjOiLA8plXbHBBHASIOzJ4--pNmi5YL78gQgeosLR0_gVWrZrFeSUV0Kr7rkpH23i9_pvfn4_Wk9Pi_goCuQvaWZTW7EdE1GPw8yR1qUnpyxcMH_A3qMsvpUSMQGRHsxZMwVexuH65UKqEw48ZKFEwl4U9ucjeYhKJdZOx2ddVG1PdtRNoELPjb694aTeM8TFOslOwPcXWxatBj1LSC11kplPFFOhyIQ"/>
-</div>
-<div class="p-md flex flex-col flex-1 gap-md">
-<h3 class="font-headline-sm text-charcoal line-clamp-2">Premium Damar Resin (Agathis Dammara)</h3>
-<div class="flex flex-col gap-sm flex-1">
-<div class="flex justify-between items-center py-xs border-b border-soft-cyan/50">
-<span class="font-label-sm text-slate-gray">HS Code</span>
-<span class="font-body-md text-charcoal font-medium">1301.90</span>
-</div>
-<div class="flex justify-between items-center py-xs border-b border-soft-cyan/50">
-<span class="font-label-sm text-slate-gray">Capacity</span>
-<span class="font-body-md text-charcoal font-medium">20 MT/Month</span>
-</div>
-<div class="flex justify-between items-center py-xs">
-<span class="font-label-sm text-slate-gray">MOQ</span>
-<span class="font-body-md text-charcoal font-medium">1 MT</span>
-</div>
-</div>
-<button class="w-full py-sm rounded-full border-[1.5px] border-ocean-teal text-ocean-teal font-label-md hover:bg-soft-cyan transition-colors mt-auto flex items-center justify-center gap-xs">
-                        View Specifications
-                        <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
-</button>
-</div>
-</article>
-<!-- Card 2 -->
-<article class="bg-pure-white rounded-[24px] shadow-[0_10px_25px_rgba(0,0,0,0.05)] overflow-hidden flex flex-col transform transition-transform hover:-translate-y-1 group">
-<div class="w-full aspect-video bg-surface-container relative">
-<img class="w-full h-full object-cover rounded-t-[24px]" data-alt="High quality export grade dried salted croaker fish laid out symmetrically on a stainless steel sorting table. Bright, sterile B2B industrial lighting, clean professional environment. Sharp focus on texture." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDC3VWjhWdOsh-BJHTXxhMLxmFd2G5G3jeNeENVC5GYs6AznkAyVQvR27nyLRAlE-jIpllGq_dVu2PRsG4ti1vOsBl-WkJIyHmJYKr01N3GPiuh1xUhyoYjHPzdSE3BY46DEUASdGVYMnocsbCIprvHQ2WPS2XRhjlMKnQtGyrkvOlDlJ_kYSZOeja-VKBLeVfH11MYtux9CV-k7JUbXMbt4kddbv-XQPoLP7lWOqd6lFJI6gj-JNmCCQ"/>
-</div>
-<div class="p-md flex flex-col flex-1 gap-md">
-<h3 class="font-headline-sm text-charcoal line-clamp-2">Dried Salted Croaker (Grade A)</h3>
-<div class="flex flex-col gap-sm flex-1">
-<div class="flex justify-between items-center py-xs border-b border-soft-cyan/50">
-<span class="font-label-sm text-slate-gray">HS Code</span>
-<span class="font-body-md text-charcoal font-medium">0305.59</span>
-</div>
-<div class="flex justify-between items-center py-xs border-b border-soft-cyan/50">
-<span class="font-label-sm text-slate-gray">Capacity</span>
-<span class="font-body-md text-charcoal font-medium">10 MT/Month</span>
-</div>
-<div class="flex justify-between items-center py-xs">
-<span class="font-label-sm text-slate-gray">MOQ</span>
-<span class="font-body-md text-charcoal font-medium">500 Kg</span>
-</div>
-</div>
-<button class="w-full py-sm rounded-full border-[1.5px] border-ocean-teal text-ocean-teal font-label-md hover:bg-soft-cyan transition-colors mt-auto flex items-center justify-center gap-xs">
-                        View Specifications
-                        <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
-</button>
-</div>
-</article>
-<!-- Card 3 -->
-<article class="bg-pure-white rounded-[24px] shadow-[0_10px_25px_rgba(0,0,0,0.05)] overflow-hidden flex flex-col transform transition-transform hover:-translate-y-1 group">
-<div class="w-full aspect-video bg-surface-container relative">
-<img class="w-full h-full object-cover rounded-t-[24px]" data-alt="Macro photography of Kotabaru white pepper peppercorns spilling from a natural jute sack onto a pristine white surface. Crisp studio lighting, emphasizing the uniform size and light color of the premium spice." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA7ugC3EuVIvC0EkC1n48qJSw6JvoJaSKYgyYMTfHwk4PxWpN-02_eK8SDCmPM8SISOLdYAOfMkTSmorEMzdYu90uyeQMJGeKkyKujZ6RSMNMMPW3qZi1R1qihowQWP5Pe5aIdyDkpEtMLPq5boc2u7pRKuHL8kBMBB3r1uhbJBrGnuYuDo48L5Chn8fN39mzvLzNL4rqaksyNQFgUS8mHVIGOTaUr1yBBsiOaLXZFcQ13C1Ds5NIzmlg"/>
-</div>
-<div class="p-md flex flex-col flex-1 gap-md">
-<h3 class="font-headline-sm text-charcoal line-clamp-2">Kotabaru White Pepper</h3>
-<div class="flex flex-col gap-sm flex-1">
-<div class="flex justify-between items-center py-xs border-b border-soft-cyan/50">
-<span class="font-label-sm text-slate-gray">HS Code</span>
-<span class="font-body-md text-charcoal font-medium">0904.11</span>
-</div>
-<div class="flex justify-between items-center py-xs border-b border-soft-cyan/50">
-<span class="font-label-sm text-slate-gray">Capacity</span>
-<span class="font-body-md text-charcoal font-medium">15 MT/Month</span>
-</div>
-<div class="flex justify-between items-center py-xs">
-<span class="font-label-sm text-slate-gray">MOQ</span>
-<span class="font-body-md text-charcoal font-medium">2 MT</span>
-</div>
-</div>
-<button class="w-full py-sm rounded-full border-[1.5px] border-ocean-teal text-ocean-teal font-label-md hover:bg-soft-cyan transition-colors mt-auto flex items-center justify-center gap-xs">
-                        View Specifications
-                        <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
-</button>
-</div>
-</article>
-<!-- Card 4 -->
-<article class="bg-pure-white rounded-[24px] shadow-[0_10px_25px_rgba(0,0,0,0.05)] overflow-hidden flex flex-col transform transition-transform hover:-translate-y-1 group">
-<div class="w-full aspect-video bg-surface-container relative">
-<img class="w-full h-full object-cover rounded-t-[24px]" data-alt="Detailed overhead view of a traditional Borneo woven mat. The intricate geometric patterns made from natural rattan and purun grass are clearly visible. Soft, even lighting, highlighting the craftsmanship." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBRT5YCUHiUP5zbEb6KovrWEhg399WfT9g_oR2QxQ45rfZWARPNJjCWI_TDabcrtdu9cvNSpRLktvigj7EvG564yb4Wa4sOnGIAC8NkKSZTV9mNVJhCTW_d697EbwgzezR7m_FlnKWuhBqDK7qNqM-VX30sTehb_aY4x2l4vqDe8bTCGnkmhUUMxR-2u8P1nr4P1ThhdZaAzNl3dYk7M42eY5ti6jay6Wu0CLMSOr8i7IAKHl8Izjig5A"/>
-</div>
-<div class="p-md flex flex-col flex-1 gap-md">
-<h3 class="font-headline-sm text-charcoal line-clamp-2">Traditional Borneo Woven Mat</h3>
-<div class="flex flex-col gap-sm flex-1">
-<div class="flex justify-between items-center py-xs border-b border-soft-cyan/50">
-<span class="font-label-sm text-slate-gray">HS Code</span>
-<span class="font-body-md text-charcoal font-medium">4601.21</span>
-</div>
-<div class="flex justify-between items-center py-xs border-b border-soft-cyan/50">
-<span class="font-label-sm text-slate-gray">Capacity</span>
-<span class="font-body-md text-charcoal font-medium">500 Units/Month</span>
-</div>
-<div class="flex justify-between items-center py-xs">
-<span class="font-label-sm text-slate-gray">MOQ</span>
-<span class="font-body-md text-charcoal font-medium">50 Units</span>
-</div>
-</div>
-<button class="w-full py-sm rounded-full border-[1.5px] border-ocean-teal text-ocean-teal font-label-md hover:bg-soft-cyan transition-colors mt-auto flex items-center justify-center gap-xs">
-                        View Specifications
-                        <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
-</button>
-</div>
-</article>
-</div>
-<!-- Detail Side Panel (Sticky) -->
-<aside class="hidden lg:flex w-80 flex-shrink-0 flex-col gap-md sticky top-32 h-fit">
-<div class="bg-surface-container-low rounded-[24px] p-md shadow-[0_10px_25px_rgba(0,0,0,0.03)] relative overflow-hidden">
-<!-- Decorative background elements -->
-<div class="absolute -top-10 -right-10 w-32 h-32 bg-primary/5 rounded-full blur-2xl pointer-events-none"></div>
-<div class="absolute -bottom-10 -left-10 w-40 h-40 bg-ocean-teal/5 rounded-full blur-2xl pointer-events-none"></div>
-<div class="flex justify-between items-start mb-md relative z-10">
-<h4 class="font-headline-sm text-charcoal">Technical Specifications</h4>
-<button class="text-slate-gray hover:text-charcoal transition-colors">
-<span class="material-symbols-outlined text-[20px]">close</span>
-</button>
-</div>
-<div class="space-y-sm relative z-10">
-<div class="bg-pure-white p-sm rounded-[12px] shadow-sm">
-<span class="block font-label-sm text-slate-gray uppercase tracking-wider mb-xs">Moisture Content</span>
-<span class="font-body-md text-charcoal font-medium">&lt;12%</span>
-</div>
-<div class="bg-pure-white p-sm rounded-[12px] shadow-sm">
-<span class="block font-label-sm text-slate-gray uppercase tracking-wider mb-xs">Sizing</span>
-<span class="font-body-md text-charcoal font-medium">Standard Export Grade</span>
-</div>
-<div class="bg-pure-white p-sm rounded-[12px] shadow-sm">
-<span class="block font-label-sm text-slate-gray uppercase tracking-wider mb-xs">Packaging</span>
-<span class="font-body-md text-charcoal font-medium">25kg PP Bags with Inner Plastic</span>
-</div>
-<div class="bg-pure-white p-sm rounded-[12px] shadow-sm">
-<span class="block font-label-sm text-slate-gray uppercase tracking-wider mb-xs">Origin</span>
-<span class="font-body-md text-charcoal font-medium">South Kalimantan, Indonesia</span>
-</div>
-</div>
-<button class="w-full mt-md py-sm rounded-full bg-ocean-teal text-pure-white font-label-md shadow-[0_4px_12px_rgba(66,155,156,0.2)] hover:bg-primary transition-colors flex items-center justify-center gap-xs relative z-10">
-                    Request Quote
-                    <span class="material-symbols-outlined text-[18px]">description</span>
-</button>
-</div>
-<!-- Contextual Map / Info snippet -->
-<div class="bg-surface-container-low rounded-[24px] p-sm flex items-center gap-sm">
-<span class="material-symbols-outlined text-ocean-teal p-sm bg-soft-cyan rounded-full">verified_user</span>
-<div>
-<h5 class="font-label-md text-charcoal">Verified Origin</h5>
-<p class="font-label-sm text-slate-gray">Direct from local producers</p>
-</div>
-</div>
-</aside>
-</section>
-</div></main><footer class="bg-surface-container-low py-xl"><div class="max-w-container-max mx-auto px-gutter grid grid-cols-1 md:grid-cols-4 gap-lg"><div class="col-span-1 md:col-span-2 space-y-md"><div class="flex items-center gap-base"><img alt="Borneo Export Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA_gwzJRPj7AZUdW3kE5RWtmXttI4zHoact2pZEQFrdtxJAu58ROsViu79jNY3IV4GQw5yu6AzoGIg79Vsu5jAwZ3gf1btrsBf6Pg4tD0LMztaB48sPas0L4a5pHtQclmlWUH2XExXTM80SNLmLBIqRnAiJ6233gPCCtVvvZopons-EXcViuOz1FShTBps1DWPlSt6g3CfY4jUgliJeZDY5H5nHZMZWtpeARV2WURsi5cqUNUs-PFGnLQ"/><span class="font-headline-sm text-charcoal">Borneo Export</span></div><p class="text-slate-gray font-body-md max-w-sm">Pioneering the sustainable export of premium South Kalimantan commodities to the global market.</p></div><div class="space-y-sm"><h4 class="font-label-md text-charcoal uppercase tracking-wider">Navigation</h4><nav class="flex flex-col gap-xs"><a class="text-on-surface-variant hover:text-ocean-teal transition-colors font-body-md" href="#">Privacy Policy</a><a class="text-on-surface-variant hover:text-ocean-teal transition-colors font-body-md" href="#">Terms of Service</a><a class="text-on-surface-variant hover:text-ocean-teal transition-colors font-body-md" href="#">Trade Compliance</a></nav></div><div class="space-y-sm"><h4 class="font-label-md text-charcoal uppercase tracking-wider">Contact</h4><p class="text-on-surface-variant font-body-md">Banjarmasin, Indonesia<br/>contact@borneoexport.com</p></div></div><div class="max-w-container-max mx-auto px-gutter mt-xl pt-md border-t border-soft-cyan text-center text-slate-gray font-label-sm">© 2024 Borneo Export Group. All Rights Reserved.</div></footer></body></html>
+
+
+<script>
+  const productSpecs = {
+    0: {
+      title: "Premium Damar Resin (Agathis Dammara)",
+      moisture: "<1.5%",
+      sizing: "Grade A Clear Lumps (2-5cm)",
+      packaging: "25kg Double PP Woven Bags",
+      origin: "Kotabaru Forests, South Kalimantan",
+      hsCode: "1301.90",
+      capacity: "20 MT/Month",
+      moq: "1 MT",
+      desc: "Harvested from wild Agathis trees in Kotabaru. Exceptional purity and transparency, ideal for premium varnishes, adhesives, and incense production."
+    },
+    1: {
+      title: "Dried Salted Croaker (Grade A)",
+      moisture: "<12%",
+      sizing: "Standard Export Grade (20-30cm)",
+      packaging: "10kg Vacuum Pack in Master Carton",
+      origin: "Kotabaru Coastal Fishery, South Kalimantan",
+      hsCode: "0305.59",
+      capacity: "10 MT/Month",
+      moq: "500 Kg",
+      desc: "Sun-dried with natural solar drying beds under strict hygienic standards. Preserved with food-grade refined salt, rich umami profile."
+    },
+    2: {
+      title: "Kotabaru White Pepper",
+      moisture: "<12%",
+      sizing: "Density > 580 g/l (Bold Berries)",
+      packaging: "25kg / 50kg Jute Bags with Inner Liner",
+      origin: "Kotabaru Plantations, South Kalimantan",
+      hsCode: "0904.11",
+      capacity: "15 MT/Month",
+      moq: "2 MT",
+      desc: "Traditional water-retted white peppercorns known for pungent piperine levels, clean cream color, and distinct aromatic sharpness."
+    },
+    3: {
+      title: "Traditional Borneo Woven Mat",
+      moisture: "<8% (Dried Purun/Rattan)",
+      sizing: "180cm x 240cm (Custom sizes available)",
+      packaging: "Roll Pack with Protective Waterproof Sheath",
+      origin: "Kotabaru Artisan Communities, South Kalimantan",
+      hsCode: "4601.21",
+      capacity: "500 Units/Month",
+      moq: "50 Units",
+      desc: "Handcrafted by indigenous master weavers using sustainable purun grass and wild rattan. Eco-friendly, durable, and highly decorative."
+    }
+  };
+
+  function selectProduct(index) {
+    const data = productSpecs[index];
+    if (!data) return;
+
+    // Update Desktop Side Panel
+    const titleEl = document.getElementById('spec-title');
+    const moistureEl = document.getElementById('spec-moisture');
+    const sizingEl = document.getElementById('spec-sizing');
+    const packEl = document.getElementById('spec-pack');
+    const originEl = document.getElementById('spec-origin');
+    const hsEl = document.getElementById('spec-hscode');
+
+    if (titleEl) titleEl.textContent = data.title;
+    if (moistureEl) moistureEl.textContent = data.moisture;
+    if (sizingEl) sizingEl.textContent = data.sizing;
+    if (packEl) packEl.textContent = data.packaging;
+    if (originEl) originEl.textContent = data.origin;
+    if (hsEl) hsEl.textContent = data.hsCode;
+
+    // Highlight card
+    document.querySelectorAll('.commodity-card').forEach((c, i) => {
+      if (i === index) {
+        c.classList.add('ring-2', 'ring-[#006768]', 'shadow-xl');
+      } else {
+        c.classList.remove('ring-2', 'ring-[#006768]', 'shadow-xl');
+      }
+    });
+
+    // Mobile/Tablet Modal Trigger if on small screen
+    if (window.innerWidth < 1024) {
+      const modal = document.getElementById('mobile-spec-modal');
+      const mTitle = document.getElementById('modal-spec-title');
+      const mMoisture = document.getElementById('modal-spec-moisture');
+      const mSizing = document.getElementById('modal-spec-sizing');
+      const mPack = document.getElementById('modal-spec-pack');
+      const mOrigin = document.getElementById('modal-spec-origin');
+      const mDesc = document.getElementById('modal-spec-desc');
+
+      if (mTitle) mTitle.textContent = data.title;
+      if (mMoisture) mMoisture.textContent = data.moisture;
+      if (mSizing) mSizing.textContent = data.sizing;
+      if (mPack) mPack.textContent = data.packaging;
+      if (mOrigin) mOrigin.textContent = data.origin;
+      if (mDesc) mDesc.textContent = data.desc;
+
+      if (modal) modal.classList.remove('hidden');
+    }
+  }
+
+  function closeSpecModal() {
+    const modal = document.getElementById('mobile-spec-modal');
+    if (modal) modal.classList.add('hidden');
+  }
+
+  function filterCatalog(category, btn) {
+    document.querySelectorAll('.filter-btn').forEach(b => {
+      b.className = 'filter-btn px-5 py-2.5 rounded-full bg-transparent hover:bg-slate-100 text-[#536161] font-semibold text-xs sm:text-sm whitespace-nowrap transition-all duration-200 cursor-pointer';
+    });
+    btn.className = 'filter-btn px-5 py-2.5 rounded-full bg-[#006768] text-white font-semibold text-xs sm:text-sm whitespace-nowrap shadow transition-all duration-200 cursor-pointer';
+
+    document.querySelectorAll('.commodity-card').forEach(card => {
+      const cardCat = card.getAttribute('data-category');
+      if (category === 'all' || cardCat === category) {
+        card.style.display = 'flex';
+      } else {
+        card.style.display = 'none';
+      }
+    });
+  }
+</script>
+
+<footer class="w-full bg-[#1c1b1b] text-white pt-16 pb-12 mt-20 border-t border-white/10">
+  <div class="max-w-7xl mx-auto px-6 sm:px-8">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 pb-12 border-b border-white/10">
+      <!-- Col 1: Brand -->
+      <div class="space-y-4">
+        <div class="flex items-center gap-3">
+          <div class="w-9 h-9 rounded-xl bg-[#006768] text-white flex items-center justify-center font-bold text-lg">BE</div>
+          <span class="font-bold text-xl text-white tracking-tight">Borneo Export</span>
+        </div>
+        <p class="text-sm text-slate-400 leading-relaxed">
+          The premier gateway bridging South Kalimantan's natural abundance and verified MSMEs with global international buyers.
+        </p>
+        <div class="flex items-center gap-3 pt-2">
+          <a href="01_home.html" class="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center hover:bg-[#429B9C] text-white transition-colors"><span class="material-symbols-outlined text-[16px]">public</span></a>
+          <a href="mailto:export@borneoexport.id" class="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center hover:bg-[#429B9C] text-white transition-colors"><span class="material-symbols-outlined text-[16px]">mail</span></a>
+          <a href="06_contact_and_rfq.html" class="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center hover:bg-[#429B9C] text-white transition-colors"><span class="material-symbols-outlined text-[16px]">call</span></a>
+        </div>
+      </div>
+
+      <!-- Col 2: Quick Links -->
+      <div class="space-y-3">
+        <h4 class="font-bold text-sm text-white uppercase tracking-wider">Quick Links</h4>
+        <ul class="space-y-2 text-sm text-slate-400">
+          <li><a href="01_home.html" class="hover:text-[#429B9C] transition-colors no-underline">Home</a></li>
+          <li><a href="02_about_us.html" class="hover:text-[#429B9C] transition-colors no-underline">About Us</a></li>
+          <li><a href="03_product_catalog.html" class="hover:text-[#429B9C] transition-colors no-underline">Product Catalog</a></li>
+          <li><a href="04_quality_and_certifications.html" class="hover:text-[#429B9C] transition-colors no-underline">Quality & Standards</a></li>
+        </ul>
+      </div>
+
+      <!-- Col 3: Operations -->
+      <div class="space-y-3">
+        <h4 class="font-bold text-sm text-white uppercase tracking-wider">Logistics & Trade</h4>
+        <ul class="space-y-2 text-sm text-slate-400">
+          <li><a href="05_shipping_and_logistics.html" class="hover:text-[#429B9C] transition-colors no-underline">Shipping Routes</a></li>
+          <li><a href="05_shipping_and_logistics.html" class="hover:text-[#429B9C] transition-colors no-underline">Container Options (FCL/LCL)</a></li>
+          <li><a href="04_quality_and_certifications.html" class="hover:text-[#429B9C] transition-colors no-underline">HACCP & Halal Certified</a></li>
+          <li><a href="06_contact_and_rfq.html" class="hover:text-[#429B9C] transition-colors no-underline">Request a Quote (RFQ)</a></li>
+        </ul>
+      </div>
+
+      <!-- Col 4: Location -->
+      <div class="space-y-3">
+        <h4 class="font-bold text-sm text-white uppercase tracking-wider">Origin Office</h4>
+        <p class="text-sm text-slate-400">
+          Kotabaru Regency, South Kalimantan<br/>
+          Indonesia, 72111
+        </p>
+        <p class="text-sm text-slate-400 pt-1">
+          <strong class="text-white">Email:</strong> export@borneoexport.id<br/>
+          <strong class="text-white">Trade Desk:</strong> +62 518 800 298
+        </p>
+      </div>
+    </div>
+
+    <!-- Bottom Bar -->
+    <div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-400 gap-4">
+      <p>© 2026 Borneo Export. All rights reserved. Premium B2B Export Gateway.</p>
+      <div class="flex items-center gap-6">
+        <span class="hover:text-white transition-colors cursor-pointer">Privacy Policy</span>
+        <span class="hover:text-white transition-colors cursor-pointer">Terms of Trade</span>
+        <span class="hover:text-white transition-colors cursor-pointer">Incoterms 2020</span>
+      </div>
+    </div>
+  </div>
+</footer>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    // Mobile navigation toggle
+    const toggleBtn = document.getElementById('mobile-menu-toggle-btn');
+    const drawer = document.getElementById('mobile-menu-drawer');
+    const icon = document.getElementById('mobile-menu-icon');
+
+    if (toggleBtn && drawer) {
+      toggleBtn.addEventListener('click', function(e) {
+        e.stopPropagation();
+        const isHidden = drawer.classList.contains('hidden');
+        if (isHidden) {
+          drawer.classList.remove('hidden');
+          if (icon) icon.textContent = 'close';
+        } else {
+          drawer.classList.add('hidden');
+          if (icon) icon.textContent = 'menu';
+        }
+      });
+
+      document.addEventListener('click', function(e) {
+        if (!drawer.contains(e.target) && !toggleBtn.contains(e.target)) {
+          drawer.classList.add('hidden');
+          if (icon) icon.textContent = 'menu';
+        }
+      });
+    }
+
+    // Interactive button ripple
+    document.querySelectorAll('.nav-pill-btn').forEach(btn => {
+      btn.addEventListener('click', function(e) {
+        const circle = document.createElement('span');
+        const diameter = Math.max(btn.clientWidth, btn.clientHeight);
+        const radius = diameter / 2;
+        const rect = btn.getBoundingClientRect();
+        
+        circle.style.width = circle.style.height = `${diameter}px`;
+        circle.style.left = `${e.clientX - rect.left - radius}px`;
+        circle.style.top = `${e.clientY - rect.top - radius}px`;
+        circle.classList.add('ripple-effect');
+        
+        const existingRipple = btn.querySelector('.ripple-effect');
+        if (existingRipple) existingRipple.remove();
+        
+        btn.appendChild(circle);
+      });
+    });
+  });
+</script>
+
+</body></html>
